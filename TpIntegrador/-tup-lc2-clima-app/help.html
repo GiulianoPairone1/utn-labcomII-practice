@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP LC2 - TP Integrador</title>
+    <!--EStilos Css-->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo.png" alt="logo"  width="30" height="50">
+            <span>Clima App</span>
+        </h1>
+        <nav>
+            <ul>
+                <li ><a href="Index.html">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <!--Contenido principal de la pagina-->
+    <main>
+        <h2>Ayuda Clima App v1.0</h2>
+        <p style="text-align:center" >Esta app te permite consultar el cliam de una ciudad en parciular utilizando la API de <a href="https://openweathermap.org/ap" target="_blank" >OpenWeatheMap</a></p>
+        <p style="text-align: center">Para poder consultar el clima, primero debera <a href="add-city.html">Agregar una ciudad</a> y luego Seleccionar la Ciudad en cuesttion desde la pagina <a href="Index.html">Clima</a></p>
+        <section>
+            <form action="Contacto">
+                <label for="text">Nombre</label>
+                <input type="text" name="Nombre">
+                <br>
+                <label for="text">Email</label>
+                <input type="email" name="email">
+                <br>
+                <label for="text">Mensaje</label>
+                <input type="text" name="textarea">
+                <br>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main> 
+
+    <footer>
+        <p>
+            Todos los derechos reservados 
+        </p>
+    </footer>
+</body>
+</html>
