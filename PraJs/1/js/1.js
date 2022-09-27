@@ -1,15 +1,16 @@
-var Numero1 = document.getElementById('num1');
-var Numero2 = document.getElementById('num2');
-var Numero3 = document.getElementById('num3');
-var Resultado = document.getElementById("resultado")
-var boton = document.getElementById('boton');
-
 function mayor(){
-    if (Numero1>Numero2){
-        if(Numero1>Numero3){
-            function showInputValue(){
-                console.log("El numero mayor es el numero")
-            }
-        };
-    };
-};
+    var numero1 = document.getElementById("numero1").value;
+    var numero2 = document.getElementById("numero2").value;
+    var numero3 = document.getElementById("numero3").value;
+    
+    if(numero1>numero2 && numero1>numero3){
+        alert("El numero "+numero1+ " es el mayor.") ; 
+    }
+    if(numero2>numero1 && numero2>numero3){
+        alert("El numero "+numero2+" es el mayor.");
+    }
+    if(numero3>numero1 && numero3>numero2){
+        alert("Elnumero "+numero3+" es el mayor");
+    }
+    alert("Los 3 numeros son iguales");
+}
