@@ -7,6 +7,7 @@
     <title>TUP LC2 - TP Integrador</title>
     <!--EStilos Css-->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
         </h1>
         <nav>
             <ul>
-                <li ><a href="Index.html">Clima</a></li>
+                <li ><a href="Index.html">Clima</a></li> 
                 <li class="current-page"><a href="add-city.html">Agregar Ciudad</a></li>
                 <li><a href="help.html">Ayuda</a></li>
             </ul>
@@ -28,11 +29,20 @@
           <section>
             <form action="Clima">
                 <label for="text">Ingrese la ciudad a agregar</label>
-                <input type="text" name="Ciudad" id="ciudad para agregar">
                 <br>
-                <input type="submit" value="Agregar">
+                <input type="text" name="Ciudad" id="agre">
+                <br>
+                <button id="agregar"><p>Agregar</p></button>
             </form>
           </section>
+          </section>
+          <form action="Mensajes" id="mensajes">
+            <p id="Success">Ciudad agregada con exito</p>
+            <br>
+            <p id="Error">Error: La ciudad ingresada no se encuentra en la API <br> o se produjo un error al consultar</p>
+            <br>
+            <p id="Warning">La ciudad ingresada ya se encuentra almacenada</p>
+          </form>
     </main> 
 
     <footer>

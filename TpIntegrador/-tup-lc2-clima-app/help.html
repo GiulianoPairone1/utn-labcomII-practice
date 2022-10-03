@@ -7,6 +7,7 @@
     <title>TUP LC2 - TP Integrador</title>
     <!--EStilos Css-->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/help.css">
 </head>
 <body>
     <header>
@@ -18,30 +19,34 @@
             <ul>
                 <li ><a href="Index.html">Clima</a></li>
                 <li><a href="add-city.html">Agregar Ciudad</a></li>
-                <li class="current-page"><a href="help.html">Ayuda</a></li>
+                <li class="current-page"><a href="help.html">Ayuda</a></li> 
             </ul>
         </nav>
     </header>   
     <!--Contenido principal de la pagina-->
     <main>
         <h2>Ayuda Clima App v1.0</h2>
-        <p style="text-align:center" >Esta app te permite consultar el cliam de una ciudad en parciular utilizando la API de <a href="https://openweathermap.org/ap" target="_blank" >OpenWeatheMap</a></p>
-        <p style="text-align: center">Para poder consultar el clima, primero debera <a href="add-city.html">Agregar una ciudad</a> y luego Seleccionar la Ciudad en cuesttion desde la pagina <a href="Index.html">Clima</a></p>
+        <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/ap" target="_blank" >OpenWeatheMap</a></p>
+        <p >Para poder consultar el clima, primero debera <a href="add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la pagina <a href="Index.html">Clima</a></p>
         <section>
             <form action="Contacto">
                 <label for="text">Nombre</label>
-                <input type="text" name="Nombre">
+                <br>
+                <input type="text" name="Nombre" id="NE">
                 <br>
                 <label for="text">Email</label>
-                <input type="email" name="email">
+                <br>
+                <input type="email" name="email" id="NE">
                 <br>
                 <label for="text">Mensaje</label>
-                <input type="text" name="textarea">
                 <br>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
+                <input type="text" name="textarea" id="Men">
+                <br>
+                <button><p>Limpiar</p></button>
+                <button><p>Enviar</p></button>
             </form>
         </section>
+        <p id="error">Ingrese un Email Valido</p>
     </main> 
 
     <footer>
