@@ -12,13 +12,7 @@ main{
     width: 80px;
     background-color:#04957d ;
     border-radius: 10px;
-}
-p{
-    color: white; 
-
-}
-#agregar p{
-    padding: 4px;
+    color: white;
 }
 
 #mensajes{
@@ -28,7 +22,8 @@ p{
     align-items: center;
     justify-content: center;
 }
-#Success{
+
+.Success{
     padding: 15px;
     border-radius: 10px;
     margin-top: 2px;
@@ -36,14 +31,14 @@ p{
     height:50px ;
     width: 450px;
 }
-#Warning{
+.Warning{
     padding:15px;
     background-color: #ffc107;
     height:50px ;
     width: 450px;
     border-radius: 10px;
 }
-#Error{
+.Error{
     padding: 10px;
     background-color:#dc3545;
     height:50px ;

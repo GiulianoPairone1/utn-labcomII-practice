@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!--Giuliano-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,14 @@
 <body>
     <header>
         <h1>
-            <img src="img/logo.png" alt="logo"  width="30" height="50">
+            <img src="img/logo.png" alt="logo"  width="30" height="50">  
             <span>Clima App</span>
         </h1>
         <nav>
             <ul>
                 <li ><a href="Index.html">Clima</a></li>
                 <li><a href="add-city.html">Agregar Ciudad</a></li>
-                <li class="current-page"><a href="help.html">Ayuda</a></li> 
+                <li class="current-page"><a href="help.html">Ayuda</a></li>   
             </ul>
         </nav>
     </header>   
@@ -29,24 +30,26 @@
         <p>Esta app te permite consultar el clima de una ciudad en particular utilizando la API de <a href="https://openweathermap.org/ap" target="_blank" >OpenWeatheMap</a></p>
         <p >Para poder consultar el clima, primero debera <a href="add-city.html">Agregar una ciudad</a> y luego seleccionar la Ciudad en cuestion desde la pagina <a href="Index.html">Clima</a></p>
         <section>
-            <form action="Contacto">
+            <form action="Contacto" id="formulario">
                 <label for="text">Nombre</label>
                 <br>
-                <input type="text" name="Nombre" id="NE">
+                <input type="text" name="Nombre">
                 <br>
                 <label for="text">Email</label>
                 <br>
-                <input type="email" name="email" id="NE">
+                <input type="email" name="email" id="email"> 
                 <br>
-                <label for="text">Mensaje</label>
+                <label for="Mensaje">Mensaje</label>
                 <br>
-                <input type="text" name="textarea" id="Men">
+                <textarea name="Mensaje" cols="30" rows="10"></textarea>
                 <br>
-                <button><p>Limpiar</p></button>
-                <button><p>Enviar</p></button>
+                <button id="limpiar"><p>Limpiar</p></button>
+                <button id="enviar"><p>Enviar</p></button>
             </form>
         </section>
-        <p id="error">Ingrese un Email Valido</p>
+        <section id="error">
+
+        </section>
     </main> 
 
     <footer>
@@ -54,5 +57,9 @@
             Todos los derechos reservados 
         </p>
     </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/pages/help.js"></script>
+
 </body>
 </html>
